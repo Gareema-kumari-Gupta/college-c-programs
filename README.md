@@ -14,4 +14,6 @@ all the programs done in class
    2.2 sir's code<br>
        to add element in array at the end<br>
        to insert elemnt in array<br>
-       to add element in array in the beginning<br>
+       to add element in array in the beginning<br><br>
+   2.3 array.c<br>
+       to 
