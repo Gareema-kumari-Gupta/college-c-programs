@@ -8,7 +8,13 @@ int display(int *ptr,int size){
 }
 
 int main(){
-	int arr[]={3,4,8,12},opt=0;
+	int arr[]={3,4,8,12},opt=0; 
+	
+	printf("Origional\n");
+	  int size=sizeof(arr)/sizeof(arr[0]);
+	  for(int i=0;i<size;i++){
+		  printf("%d\t",arr[i]);
+	  }
 
 printf("which operation would you like to do?\n1.Add element in beginning\n2.Add element in the end\n3. Insert a element in between\n choose an option: ");
 scanf("%d",&opt);
@@ -20,11 +26,7 @@ switch(opt){
     
     //to add a element in between
     
-	  printf("Origional\n");
-	  int size=sizeof(arr)/sizeof(arr[0]);
-	  for(int i=0;i<size;i++){
-		  printf("%d\t",arr[i]);
-	  }
+	 
 	  printf("\n");
 	  int pos=1;
   	for(int i=size;i>=pos;i--){
