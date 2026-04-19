@@ -7,40 +7,37 @@ void display(int *ptr, int size) {
 }
 
 int main() {
-    int size, opt, pos, insert, add, end;
+    int size, pos, insert;
 
     printf("How many numbers would you like to enter? ");
     scanf("%d", &size);
 
-    int org[size], arr[size];
+    int arr[size];
 
     printf("Enter elements:\n");
     for (int i = 0; i < size; i++) 
         scanf("%d", &org[i]);
-    // Copy array
-    for (int i = 0; i < size; i++) 
-        arr[i] = org[i];
     
     printf("\nOriginal Array:\n");
-    display(org, size);
+    display(arr, size);
 
         // Add at beginning
             printf("\nEnter a number to insert at the beginning: ");
-            scanf("%d", &add);
+            scanf("%d", &insert);
 
             for (int i = size - 1; i >= 0; i--) 
                 arr[i + 1] = arr[i];
 
-            arr[0] = add;
+            arr[0] = insert;
              printf("\nAdding element at the beginning:\n");
             size++;
             display(arr, size);
 
         // Add at end
             printf("\nEnter a number to insert at the end: ");
-            scanf("%d", &end);
+            scanf("%d", &insert);
 
-            arr[size] = end;
+            arr[size] = insert;
             size++;
             printf("\nAdding element at the end:\n");
             display(arr, size);
