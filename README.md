@@ -5,15 +5,7 @@ all the programs done in class
     which is made using<br>
     switch statement, do-while loop, funtion<br><br><br>
 
-2. array manupulation<br><br>
-   2.1 my code no help<br>
-       maing 3 arry<br>
-       1st saves the org data<br>
-       2nd in that we add a element at last<br>
-       3rd in that same updated array a element is added in between<br><br>
-   2.2 sir's code<br>
-       to add element in array at the end<br>
-       to insert elemnt in array<br>
-       to add element in array in the beginning<br><br>
-   2.3 array.c<br>
-       to 
+2. array<br>
+    contains insertion(in middle,end,and beginning)<br>
+    deletion(through position)<br>
+    searching(linear search/simple search)<br><br>
