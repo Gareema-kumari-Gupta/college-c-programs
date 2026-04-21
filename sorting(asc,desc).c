@@ -33,6 +33,22 @@ int main() {
     	}
 	}
      
+     printf("\nAfter Sorting it in descending order:\n");
+	display(arr,size);
+
+	printf("\nBefore Sorting:\n");
+     display(arr,size);
+     
+	for(int i = 1; i < size; i++) {
+    		for(int j = 1; j < size; j++) {
+        		if(arr[j-1] > arr[j]) {
+            			int t = arr[j-1];
+            			arr[j-1] = arr[j];
+            			arr[j] = t;
+       			}
+    		}
+	}
+     
      printf("\nAfter Sorting it in Ascending order:\n");
 	display(arr,size);
     return 0;
