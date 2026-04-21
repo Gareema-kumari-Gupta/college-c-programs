@@ -12,7 +12,7 @@ int main() {
     printf("How many numbers would you like to enter? ");
     scanf("%d", &size);
 
-    int arr[size],sort[size];
+    int arr[size];
 
     printf("Enter elements:\n");
     for (int i = 0; i < size; i++) 
