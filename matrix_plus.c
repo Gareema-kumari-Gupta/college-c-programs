@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int *input(int *row, int *col){
-    printf("Enter the number of rows and columns: ");
+    printf("\nEnter the number of rows and columns: ");
     if(scanf("%d %d", row, col) != 2){
         return NULL;
     }
@@ -19,6 +19,16 @@ int *input(int *row, int *col){
     }
     return arr;
 }
+
+void display(int *arr, int row, int col){
+    for(int i = 0; i < row; i++){
+        for(int j = 0; j < col; j++){
+            printf("%d ", arr[i * col + j]);
+        }
+        printf("\n");
+    }
+}
+
 int main(){
     int rowA, colA, rowB, colB;
     int *A, *B;
@@ -43,14 +53,14 @@ int main(){
                 result[i * col + j] = A[i * col + j] + B[i * col + j];
             }
         }
-        
+
+        printf("\nMatrix A:\n");
+        display(A, rowA, colA);
+        printf("\nMatrix B:\n");
+        display(B, rowB, colB);
         printf("\nResult of Matrix Addition:\n");
-        for(int i=0; i<row; i++){
-            for(int j=0; j<col; j++){
-                printf("%d ", result[i * col + j]);
-            }
-            printf("\n");
-        }
+        display(result, row, col);
+
         free(result);
         free(A);
         free(B);
