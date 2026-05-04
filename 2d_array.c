@@ -12,6 +12,7 @@ int main(){
             scanf("%d",&arr[i][j]);
         }
     }
+    
     printf("The 2D array is:\n");
     for(int i=0; i<row; i++){
         for(int j=0; j<col; j++){
