@@ -17,6 +17,9 @@ int main() {
     printf("Enter elements:\n");
     for (int i = 0; i < size; i++) 
         scanf("%d", &arr[i]);
+
+    printf("\nBefore Sorting:\n");
+     		display(arr,size);
      	
      // sorting
 	 
@@ -25,9 +28,6 @@ int main() {
      
 	 switch(opt){
 	 	case 1:
-            printf("\nBefore Sorting:\n");
-     		display(arr,size);
-
             for(int i = 0; i < size; i++) {
                 int min = i;
     			for(int j = i+1; j < size; j++) {
@@ -45,9 +45,6 @@ int main() {
 
             break;
         case 2:
-            printf("\nBefore Sorting:\n");
-     		display(arr,size);  
-
             for(int i = 0; i < size; i++) {
                 int min = i;
     			for(int j = i+1; j < size; j++) {
